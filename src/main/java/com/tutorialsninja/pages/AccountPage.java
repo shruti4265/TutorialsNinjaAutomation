@@ -12,39 +12,35 @@ public class AccountPage {
     public AccountPage(WebDriver driver) {
 
         this.driver = driver;
-
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
 
     }
 
-    @FindBy(linkText="Logout")
+    @FindBy(linkText = "Logout")
     WebElement logout;
 
-    @FindBy(name="search")
-    WebElement searchBox;
+    @FindBy(xpath = "//h1[text()='My Account']")
+    WebElement accountHeading;
 
-    @FindBy(css="button.btn.btn-default.btn-lg")
-    WebElement searchButton;
+    @FindBy(xpath = "//h1[text()='Account Logout']")
+    WebElement logoutHeading;
 
     public boolean isAccountPageDisplayed() {
 
-        return driver.getTitle().contains("My Account");
+        return accountHeading.isDisplayed();
 
     }
 
-    public void searchProduct(String product) {
-
-        searchBox.sendKeys(product);
-
-        searchButton.click();
-
-    }
-
-    public void logout() {
+    public void clickLogout() {
 
         logout.click();
 
     }
-    
+
+    public boolean isLogoutSuccessful() {
+
+        return logoutHeading.isDisplayed();
+
+    }
 
 }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\shrut\AppData\Local\Temp\testng-eclipse--1414370773\testng-customsuite.xml</span>
+                    <span>C:\Users\shrut\AppData\Local\Temp\testng-eclipse--1976313846\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tutorialsninja.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with Valid Credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.tutorialsninja.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Logout Successfully&quot;, &quot;Logout&quot;)">runScenario("Logout Successfully", "Logout")</a> <!-- method navigator-link -->
@@ -117,17 +122,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.tutorialsninja.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search with a Valid Product Name&quot;, &quot;Product Search&quot;)">runScenario("Search with a Valid Product Name", "Product Search")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.tutorialsninja.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with Valid Credentials", "Login Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.tutorialsninja.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Product to Cart Successfully&quot;, &quot;Add Product to Cart&quot;)">runScenario("Add Product to Cart Successfully", "Add Product to Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tutorialsninja.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search with a Valid Product Name&quot;, &quot;Product Search&quot;)">runScenario("Search with a Valid Product Name", "Product Search")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -150,25 +150,80 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Login with Valid Credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Valid Credentials","Login Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=150.0.7871.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50dad8eff20dd42de16b9ba354e2bae2, findElement {using=xpath, value=//h1[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\shrut\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49184}, goog:processID: 26528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49184/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50dad8eff20dd42de16b9ba354e2bae2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at com.tutorialsninja.pages.AccountPage.isAccountPageDisplayed(AccountPage.java:30)
+	at com.tutorialsninja.stepdefinitions.LoginSteps.verifyLogin(LoginSteps.java:82)
+	at ✽.User should be logged in successfully(file:///C:/Users/shrut/eclipse-workspace/TutorialsNinjaAutomation/src/test/resources/features/login.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Logout Successfully&quot;, &quot;Logout&quot;)">
                   </a> <!-- runScenario("Logout Successfully", "Logout") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Logout Successfully","Logout")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User clicks Logout&apos; and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;User clicks Logout&quot;)
-public void user_clicks_logout() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;User should be logged out successfully&quot;)
-public void user_should_be_logged_out_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.User clicks Logout(file:///C:/Users/shrut/eclipse-workspace/TutorialsNinjaAutomation/src/test/resources/features/logout.feature:11)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Login&quot;}
+  (Session info: chrome=150.0.7871.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50dad8eff20dd42de16b9ba354e2bae2, findElement {using=link text, value=Login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\shrut\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49184}, goog:processID: 26528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49184/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50dad8eff20dd42de16b9ba354e2bae2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at com.tutorialsninja.pages.HomePage.clickLogin(HomePage.java:34)
+	at com.tutorialsninja.stepdefinitions.LoginSteps.clickLogin(LoginSteps.java:56)
+	at ✽.User clicks on Login(file:///C:/Users/shrut/eclipse-workspace/TutorialsNinjaAutomation/src/test/resources/features/logout.feature:8)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -185,30 +240,20 @@ public void user_should_be_logged_out_successfully() {
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search with a Valid Product Name&quot;, &quot;Product Search&quot;)">
-                  </a> <!-- runScenario("Search with a Valid Product Name", "Product Search") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search with a Valid Product Name","Product Search")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("Login with Valid Credentials", "Login Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with Valid Credentials","Login Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Add Product to Cart Successfully&quot;, &quot;Add Product to Cart&quot;)">
                   </a> <!-- runScenario("Add Product to Cart Successfully", "Add Product to Cart") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Add Product to Cart Successfully","Add Product to Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search with a Valid Product Name&quot;, &quot;Product Search&quot;)">
+                  </a> <!-- runScenario("Search with a Valid Product Name", "Product Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search with a Valid Product Name","Product Search")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -218,7 +263,7 @@ public void user_should_be_logged_out_successfully() {
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shrut\AppData\Local\Temp\testng-eclipse--1414370773\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shrut\AppData\Local\Temp\testng-eclipse--1976313846\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -279,24 +324,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.tutorialsninja.runners.TestRunner')
-data.setCell(0, 3, 7775);
+data.setCell(0, 3, 7079);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.tutorialsninja.runners.TestRunner')
-data.setCell(1, 3, 4219);
+data.setCell(1, 3, 4781);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.tutorialsninja.runners.TestRunner')
-data.setCell(2, 3, 2958);
+data.setCell(2, 3, 1387);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.tutorialsninja.runners.TestRunner')
-data.setCell(3, 3, 1896);
+data.setCell(3, 3, 590);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -324,30 +369,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.tutorialsninja.runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@59b32539)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4a481728)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Add Product to Cart Successfully", "Add Product to Cart")</span>
-                <span class="method-start">539 ms</span>
+                <span class="method-start">665 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Login with Valid Credentials", "Login Functionality")</span>
-                <span class="method-start">8320 ms</span>
+                <span class="method-start">7750 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Logout Successfully", "Logout")</span>
-                <span class="method-start">12541 ms</span>
+                <span class="method-start">12542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search with a Valid Product Name", "Product Search")</span>
-                <span class="method-start">15505 ms</span>
+                <span class="method-start">13148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">17405 ms</span>
+                <span class="method-start">14538 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
