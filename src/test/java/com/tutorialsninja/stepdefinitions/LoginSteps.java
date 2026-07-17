@@ -1,13 +1,13 @@
 package com.tutorialsninja.stepdefinitions;
 
 import org.testng.Assert;
+import com.tutorialsninja.pages.ProductPage;
+import com.tutorialsninja.pages.CartPage;
 
 import com.tutorialsninja.factory.DriverFactory;
 import com.tutorialsninja.pages.AccountPage;
-import com.tutorialsninja.pages.CartPage;
 import com.tutorialsninja.pages.HomePage;
 import com.tutorialsninja.pages.LoginPage;
-import com.tutorialsninja.pages.ProductPage;
 import com.tutorialsninja.pages.SearchPage;
 import com.tutorialsninja.utilities.ConfigReader;
 
@@ -103,9 +103,6 @@ public class LoginSteps {
         DriverFactory.quitDriver();
 
     }
-
-    // ---------------- CART ----------------
-
     @When("User opens the product")
     public void userOpensTheProduct() {
 
@@ -133,24 +130,6 @@ public class LoginSteps {
     public void verifyCart() {
 
         Assert.assertTrue(cartPage.verifyCartPage());
-
-        DriverFactory.quitDriver();
-
-    }
-
-    // ---------------- LOGOUT ----------------
-
-    @When("User clicks Logout")
-    public void userClicksLogout() {
-
-        accountPage.clickLogout();
-
-    }
-
-    @Then("User should be logged out successfully")
-    public void verifyLogout() {
-
-        Assert.assertTrue(accountPage.isLogoutSuccessful());
 
         DriverFactory.quitDriver();
 
